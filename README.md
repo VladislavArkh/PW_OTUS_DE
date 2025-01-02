@@ -1,18 +1,11 @@
 # Анализ доходности инвестиционного портфеля (Investment Portfolio Analysis)
 
-Проектная работа по курсу **[Data Engineer](https://otus.ru/lessons/data-engineer)** от **[OTUS](https://otus.ru/)**.
-
 Система получения данных с API Московской биржи ([MOEX ISS](https://www.moex.com/a2193)) и анализ доходности портфеля, на основе датасета c демонстрационными операциям.  Визуализация данных в **[Yandex DataLens](https://cloud.yandex.ru/services/datalens)**.<br>
 `Yandex Cloud`, `Airflow`, `DBT`, `Docker`, `Yandex Object Storage`, `ClickHouse`, `Yandex DataLens`
 
 Оценка эффективности инвестиций с учетом комиссий, налогов, дивидендов и купонов.
 
 **[Презентация проекта](documents/presentation.pdf)**.
-
-**[Анализ доходности инвестиционного портфеля](https://datalens.yandex/g2hy8czkk7gi9)** - Демонстрация дашборда.<br>
-*Данные материализованы на 19.11.2021 17:40, без последующего обновления.*
-
-:information_source: На момент публикации проекта, в **Yandex DataLens** отсутствует возможность экспорта/импорта всех связанных объектов дашборда для переноса.
 
 ## Архитектура проекта
 ![project_architecture](https://user-images.githubusercontent.com/18349305/142174598-bcfee23d-3d35-4481-ab99-a11f8f3e8ae7.jpg)
@@ -124,12 +117,3 @@ docker rmi otus-de-ipa:1.0
 
 ### Торговый день
 ![Торговый день](https://user-images.githubusercontent.com/18349305/142234757-d30b3ae8-de6a-4882-b82d-acf8e2c1a5bb.jpg)
-
-## Полезные ресурсы
-* Документация [Программный интерфейс к MOEX ISS](https://www.moex.com/a2193)
-* Онлайн-справочник запросов к MOEX API: http://iss.moex.com/iss/reference/<br>
-    Префиксом к описанным в нем запросам является: http://iss.moex.com/
-* Чат ClickHouse в телеграм: https://t.me/clickhouse_ru
-* Altinity ClickHouse [Knowledge Base](https://kb.altinity.com/)
-* Марафон по DataLens: https://datayoga.ru/datalensbook
-* Чат DataLens в телеграм: https://t.me/YandexDataLens
